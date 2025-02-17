@@ -1,0 +1,308 @@
+
+ \|------------------------|/
+ \|-Issued by: Dan Sorkin- |/
+ \|------------------------|/
+
+
+
+\\ AWS Core Services //
+
+
+1.Which AWS service is used to store objects such as images, videos, and backups?
+
+
+A) EC2
+B) RDS
+C) S3
+D) Lambda
+
+
+Answer: (C)
+
+-----------------------
+
+2. What is the purpose of an AWS Availability Zone?
+
+
+A) It ensures high availability by distributing resources across multiple locations.
+B) It acts as a data center located in different countries.
+C) It is only used for networking and VPCs.
+D) It is a security feature of AWS.
+
+
+
+Answer: (A)
+
+----------------------
+
+
+
+3. What is the default storage class for an S3 bucket when you create it?
+
+
+A) S3 Intelligent-Tiering
+B) S3 Glacier
+C) S3 Standard
+D) S3 Infrequent Access (IA)
+
+
+
+
+Answer: (C)
+
+
+----------------------
+----------------------
+
+
+\\ IAM & Security // 
+
+
+1. What is the purpose of an IAM role?
+
+
+A) It is used to assign permissions to AWS services and users.
+B) It is a dedicated user with full AWS access.
+C) It replaces IAM users completely.
+D) It is used only for temporary access.
+
+
+
+Answer: (A)
+
+-----------------------
+
+2. In AWS IAM, what is the best practice for securing your root account?
+
+
+A) Keep it logged in at all times for easy access.
+B) Use it only for creating IAM users and enable Multi-Factor Authentication (MFA).
+C) Assign full administrator access to all IAM users.
+D) Share credentials with your team for convenience.
+
+
+Answer: (B)
+
+----------------------
+
+3. What is the purpose of an Internet Gateway in AWS?
+
+
+A) To allow communication between instances within a VPC.
+B) To provide internet access to resources in a private subnet.
+C) To restrict public access to EC2 instances.
+D) To encrypt data stored in S3.
+
+
+
+
+Answer: (A) (Only if the instance is public)
+
+
+----------------------
+
+
+4. What is the main difference between a Security Group and a Network ACL?
+
+
+A) Security Groups operate at the instance level, while NACLs operate at the subnet level.
+B) NACLs provide fine-grained access control for IAM users.
+C) Security Groups apply only to databases.
+D) NACLs are only used for VPN connections.
+
+
+Answer: (A)
+
+----------------------
+----------------------
+
+\\ Storage & Databases //
+
+
+1. Which AWS service provides a managed relational database service?
+
+
+A) DynamoDB
+B) RDS
+C) Redshift
+D) S3
+
+
+Answer: (B)
+
+
+---------------------
+
+2. What happens if you delete an S3 bucket with objects inside it?
+
+
+A) The bucket is deleted, but the objects remain in AWS storage.
+B) The bucket is deleted, and all objects inside it are permanently removed.
+C) The bucket cannot be deleted unless it is empty.
+D) The bucket is archived, and you can restore it later.
+
+
+
+
+Answer: (B) (If versioning is off, by default.)
+
+
+---------------------
+
+
+\\ AWS Billing & Pricing // 
+
+
+
+1. Which AWS pricing model allows you to pay only for the computing resources you use?
+A) Reserved Instances
+B) Spot Instances
+C) Pay-as-you-go
+D) Fixed-rate pricing
+
+
+Answer: (C)
+
+---------------------
+
+
+What tool in AWS helps users monitor their spending and set budget alerts?
+A) AWS Cost Explorer
+B) AWS Config
+C) AWS CloudTrail
+D) AWS Security Hub
+
+
+Answer (A)
+
+----------------------
+
+
+
+\\ Research-based AWS Questions - using google only // 
+
+
+1. What are AWS Landing Zones, and how do they help with multi-account governance?
+
+
+Answer: AWS LZ is a service that provides a starting point of which you can deploy workloads and applications - it gives a baseline for multi-account architecture.
+
+AWS LZ enforces controls to ensure compliance with guidelines across multi-account environments which include default accounts, account structure, network and security layouts.
+
+
+--
+
+2. Explain how AWS WAF protects web applications from common attacks.
+
+Answer: AWS WAF protects the web applications from common attacks by allowing you to configure specific rules to block or monitor web requests based on the rules you have set.
+such as, HTTP/S headers or body, IP addresses or customs URI.
+
+
+--
+
+3. What is AWS Snowball, and when should it be used?
+
+
+Answer: AWS Snowball is  a petabyte scale data transport solution that uses secure appliances to transfer large amounts of data in and out of the AWS cloud.
+this service is best used for large-scale data transfers  with high data costs and long transfer times.
+
+
+--
+
+4. What are the key differences between AWS Backup and manual snapshot backups?
+
+
+Answer: AWS snapshots are point in time copy of your current status/volume on the disk level which is stored in S3 bucket which are created manually and is only replicated across all the AZ in the region.
+with AWS Backup makes it easy for you to centralize and automate the backing of data across AWS services. This lets you create polices specific to the service which lets you define requirements such as how frequent you want to backup and how much to keep the backup for all this is done by simply tagging the services.
+
+--
+
+5. How does AWS Shield help mitigate DDoS attacks?
+
+
+Answer: AWS Shield helps you stop DDoS attacks for AWS services on the network, transport and application layers. The service uses a combination of traffic filtering and real time monitoring to ensure that even at a time of an attack your service/application remains available.
+
+
+--
+
+6.Explain the differences between AWS Transit Gateway and VPC Peering.
+
+
+Answer: AWS transit connects your VPC network through a central hub, this simplifies your network and is a solution for complex peering and offers high scalability and management while VPC peering offers a point-to-point peering with limited automation and manual management with routing best used for smaller cases.
+
+
+
+--
+
+7. What is AWS Step Functions, and how does it help with workflow automation?
+
+
+Answer: AWS Step Functions let you create workflows AKA(Also Known As) State Machines. Workflows are a series of even driven steps. Each state represents a unit of work that another AWS service performs. The AWS Step Functions helps you automate workflows via console where you can visualize, edit and debug your workflows. You can easily examine each state of each step in your workflow.
+
+
+
+--
+
+8. How does AWS Control Tower assist organizations in managing multiple AWS accounts?
+
+
+Answer: AWS Control Tower applies mandatory and also optional high-level rules called "Controls" that help you enforce your set policies on the account/s. This service helps you observe and manage every movement to ensure smooth and secure operations, helps the company keep a unified view and also respond quickly. 
+
+
+--
+
+9. What is the significance of AWS Outposts in hybrid cloud solutions?
+
+
+Answer: AWS Outposts help you by extending your infrastructure with on-premise environments, AWS Outposts helps you with seamless migration between Cloud and On-Premise while providing low latency access for various applications, workload portability and reducing complexity.
+
+--
+
+10. Explain the key use cases for AWS Elastic File System (EFS) compared to S3 and EBS.
+
+
+Answer: EFS is Network File System, allows you a shared file system across multiply machines across AZ's.
+it's best used for traditional file system interface that needed to be accessed by multiply servers at a time while S3 is an object storage best used for large scale data storage and global accessibility while remaining unstructured. EBS is a block storage and is EC2 based, best for low latency and high performance access to data.
+
+
+----------
+\\ THE //
+// END \\
+----------
+
+
+
+
+-------------
+-------------
+
+HANDS ON UI
+
+-------------
+-------------
+
+
+
+4.Describe how you configured notifications for the alarm
+
+
+Answer: You need to enter CloudWatch, enter the "getting started" from there you click on "create alarm" You choosea metric, per instance alarm, then you choose what sort of alarm you want to use.(dont forget to name the alarm) The next step is to verify that this alarm is attached to your instance by copy-pasting your instance ID aftewards you and choose the correct parameters, if you want max,sum or average. and choose higher/greater/equal. then you can choose to either use an SNS notification method or an ARN/topic. You also can choose the EC2 action to take, if you want the instance to reboot/terminate/shutdown.
+
+
+
+----------------------
+
+
+5. Explain the steps to analyze usage and forecast costs.
+
+
+Answer: set your desired month (25-01-01 -  2025-02-17) and make sure you have "show forecased values" in additional data settings, we also want to see monthly granularity. We can see that Feburary costs are at 1,736.24$* this is an estimate of how much you will be charged based on previous usage patterns.
+
+
+---------------------
+
+
+
+
+
+
